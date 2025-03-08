@@ -1,0 +1,84 @@
+
+body {
+  background: linear-gradient(60deg, #fbfbfb, #858585);
+  min-height: 100vh;  /* This ensures the gradient covers full viewport height */
+
+}
+@font-face {
+  font-family: 'gemosh';
+  src: url('./assets/GemoshHeadline-Regular.ttf') format('truetype');
+  font-weight: normal; /* Specify if it's bold, normal, etc. */
+  font-style: normal;  /* Specify if it's italic, normal, etc. */
+}
+
+.navi{
+  
+  margin-top: 25px;
+  margin-right: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+}
+
+.side{
+  border: 2px solid black;
+  width: 15cm;
+  height: 15cm;
+  display: inline-block; /* Optional, required for width/height */
+  border-radius: 30px;
+  background-color: #7c939f;
+  box-shadow: 3px 3px;
+  position: relative;
+  top: 30px;
+  left: 34.4cm;
+}
+
+.para{
+  font-family: 'gemosh', sans-serif;
+  font-size: 300px;
+  margin-right: 900px;
+  color: #191919;
+  margin: 20px 0px;
+  margin-bottom: -60px;
+  letter-spacing: 10px;
+  }
+
+
+  .con{
+    width: 40cm;
+    height: 16cm;
+    position: relative;
+    top: 30px;
+    /* border: solid 1px black;
+    display: inline-block; /* Optional, required for width/height */
+  }
+  .img1{
+    width: 60%;
+  }
+  .prev, .next {
+    all: unset;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;  /* Add cursor pointer */
+    z-index: 10;
+  }
+  
+  .prev {
+    right: 10px;
+  }
+  
+  .next {
+    left: 10px;
+  }
+
+  .prev img, .next img {
+    width: 100px;
+    height: 100px;
+    transition: transform 0.3s ease;
+}
+
+.prev:hover img, .next:hover img {
+    transform: scale(1.1); /* Slightly enlarges the image */
+}
+  
